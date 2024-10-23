@@ -2,12 +2,12 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
-import StarRating from "./StarRating.jsx";
+// import StarRating from "./StarRating.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    {/* <App /> */}
-    <StarRating
+    <StrictMode>
+        <App />
+        {/* <StarRating
       maxRating={5}
       messages={["Terrible", "Bad", "Okay", "Good", "Amazing"]}
     />
@@ -17,6 +17,6 @@ createRoot(document.getElementById("root")).render(
       color={"red"}
       className="test"
       defaultRating={3}
-    />
-  </StrictMode>
+    /> */}
+    </StrictMode>,
 );
